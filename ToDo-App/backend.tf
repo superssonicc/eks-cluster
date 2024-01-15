@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "10weeksofcloudops-week4"
-    key    = "backend/ToDo-App.tfstate"
-    region = "us-east-1"
-    dynamodb_table = "10weeksofcloudops-dynamo"
+    bucket         = "eks-terraform-bucket-west"
+    key            = "backend/ToDo-App.tfstate"
+    region         = "us-west-2"
+    dynamodb_table = "eks-terraform-dynamo"
   }
 }

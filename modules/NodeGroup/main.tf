@@ -45,7 +45,7 @@ resource "aws_eks_node_group" "node_group" {
   force_update_version = false
 
   # Instance type associated with the EKS Node Group
-  instance_types = ["t3.small"]
+  instance_types = ["t2.micro"]
 
   labels = {
     role = "${var.EKS_CLUSTER_NAME}-Node-group-role",
